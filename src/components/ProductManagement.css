@@ -1,0 +1,53 @@
+.product-management {
+  margin: 0;
+  padding: 20px;
+  background-color: aqua;
+  min-height: 100vh;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.product-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-list th, .product-list td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.product-list img {
+  max-width: 50px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}

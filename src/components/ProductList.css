@@ -1,0 +1,110 @@
+.product-list-container {
+    border: 2px solid #007bff; /* Màu border */
+    border-radius: 8px; /* Bo tròn góc */
+    padding: 10px; /* Khoảng cách bên trong */
+    cursor: pointer; /* Hiển thị con trỏ tay khi hover */
+    transition: box-shadow 0.3s; /* Hiệu ứng chuyển tiếp cho bóng */
+    background-color: #ffffff;
+}
+
+.product-list-container:hover {
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3); /* Hiệu ứng bóng khi hover */
+}
+
+.header-title {
+    background-color: #007bff; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo tròn góc */
+    text-align: center; /* Căn giữa chữ */
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và bảng */
+}
+
+
+.product-list {
+    width: 100%; /* Chiều rộng bảng */
+    border-collapse: collapse; /* Hợp nhất biên */
+}
+
+.product-list th, .product-list td {
+    padding: 10px; /* Khoảng cách bên trong */
+    border: 1px solid #ccc; /* Biên của ô */
+    text-align: center; /* Căn giữa nội dung ô */
+}
+
+.product-list tr {
+    transition: opacity 0.3s ease, background-color 0.3s ease; /* Hiệu ứng chuyển tiếp cho độ mờ */
+}
+
+
+.product-list tr:hover {
+    background-color: #e0e0e0; /* Màu xám nhạt khi hover */
+}
+
+.in-stock {
+    color: green; /* Màu xanh lá cho sản phẩm còn hàng */
+}
+
+.out-of-stock {
+    color: gray; /* Màu xám cho sản phẩm hết hàng */
+}
+
+.product-list img {
+    max-width: 50px; /* Độ rộng tối đa cho hình ảnh */
+}
+button-edit, .button-delete {
+    padding: 5px 10px; /* Khoảng cách bên trong */
+    border: none; /* Không có biên */
+    border-radius: 5px; /* Bo tròn góc */
+    cursor: pointer; /* Hiển thị con trỏ tay khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển tiếp */
+}
+
+.button-edit {
+    background-color: #007bff; /* Màu nền cho nút sửa */
+    color: white; /* Màu chữ */
+}
+
+.button-edit:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+.button-delete {
+    background-color: #dc3545; /* Màu nền cho nút xóa */
+    color: white; /* Màu chữ */
+    margin-left: 5px; /* Khoảng cách giữa các nút */
+}
+
+.button-delete:hover {
+    background-color: #c82333; /* Màu nền khi hover */
+}
+/* Existing styles... */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination li a:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination li.active a {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
